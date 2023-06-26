@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrarAsistencia</title>
+</head>
+<body>
+    <form action="{{ url_for('registrarAsistencia')}}" method="post">
+            <input type="hidden" name="idalumno" value="{{ idalumno }}">
+            <a href="{{url_for('')}}">{{ alumno.nombre }} {{ alumno.apellido }}</a>
+            <input type="text" name="asis" placeholder="Asistencia">
+        <br><br>
+            <input type="text" name="justificacion" placeholder="Justificacion">
+
+    </form>
+</body>
+</html>

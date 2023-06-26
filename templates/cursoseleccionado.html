@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cursoseleccionado</title>
+</head>
+<body>
+    {%for estudiante in estudiantes%}
+        {{estudiante.nombre}}
+        {{estudiante.apellido}}
+        {{estudiante.dni}}<br>
+    {%endfor%}
+    <a href="/registrarAsistencia">Crear asistencia</a><br>
+</body>
+</html>
